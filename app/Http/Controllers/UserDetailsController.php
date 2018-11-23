@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-//use DB;
+use DB;
 class UserDetailsController extends Controller
 {
     public function userDetails(Request $req)
