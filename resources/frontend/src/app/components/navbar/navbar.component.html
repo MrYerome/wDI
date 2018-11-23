@@ -1,0 +1,25 @@
+<!--<ul>-->
+  <!--<li>-->
+    <!--<a routerLink='/accueil' class="brand-logo center"><span>Page accueil</span></a>-->
+  <!--</li>-->
+  <!--<li>-->
+    <!--<a routerLink='/diners' class="brand-logo center"><span>Les diners</span></a>-->
+  <!--</li>-->
+  <!--<li>-->
+    <!--<a routerLink='/inscription' class="brand-logo center"><span>S'inscrire</span></a>-->
+  <!--</li>-->
+  <!--<li>-->
+    <!--<a routerLink='/test' class="brand-logo center"><span>Page de test</span></a>-->
+  <!--</li>-->
+<!--</ul>-->
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" routerLink='/accueil'>Accueil</a>
+  <a class="navbar-brand" routerLink='/diners'>Les diners</a>
+  <a class="navbar-brand" routerLink='/inscription'>S'inscrire</a>
+  <a class="navbar-brand" routerLink="login" *ngIf="!loggedIn">Login</a>
+  <a class="navbar-brand" href="#" (click)="logout($event)" *ngIf="loggedIn">Logout</a>
+  <a class="navbar-brand" routerLink="profile" *ngIf="loggedIn">Profile</a>
+
+</nav>
+
